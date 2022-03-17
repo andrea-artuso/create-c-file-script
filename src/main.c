@@ -6,7 +6,7 @@
 #include <ctype.h>
 
 int main(void){
-    char filename[FILENAME_MAX+1], filename_lower_nospaces[FILENAME_MAX+1], command[FILENAME_MAX+12] = "script.bat ";
+    char filename[FILENAME_MAX+1], filename_lower_nospaces[FILENAME_MAX+1], command[FILENAME_MAX+12] = "script.bat ", restart;
     int i;
 
     do
@@ -36,6 +36,12 @@ int main(void){
     strcat(command, filename_lower_nospaces);
 
     system(command);
+
+    printf("The folder \"%s\" has been created.\nNow it contains \"%s.c\" file.\n\nDo you want to create a new file? (Y/N)\n", filename, filename_lower_nospaces);
+    scanf_s("%c", &restart);
+
+    if (restart == 'Y' || restart == 'y')
+        main();
     
     return 0;
 }
