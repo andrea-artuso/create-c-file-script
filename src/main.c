@@ -8,7 +8,7 @@
 #include <ctype.h>
 
 int main(void){
-    char filename[FILENAME_MAX+1], filename_lower_nospaces[FILENAME_MAX+1], command[FILENAME_MAX+12] = "../src/script.bat ", restart;
+    char filename[FILENAME_MAX+1], filename_lower_nospaces[FILENAME_MAX+1], command[FILENAME_MAX+12] = "script.bat ", restart;
     int i;
 
     do
