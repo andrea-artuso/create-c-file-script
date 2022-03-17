@@ -1,3 +1,5 @@
+#define __STDC_WANT_LIB_EXT1__ 1
+
 // standard libraries
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,6 +41,7 @@ int main(void){
 
     printf("The folder \"%s\" has been created.\nNow it contains \"%s.c\" file.\n\nDo you want to create a new file? (Y/N)\n", filename, filename_lower_nospaces);
     scanf_s("%c", &restart);
+    getchar();
 
     if (restart == 'Y' || restart == 'y')
         main();
