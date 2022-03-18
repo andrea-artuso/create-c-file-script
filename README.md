@@ -10,7 +10,7 @@ A simple C script to create a C file with a batch script
 2. Open and extract the `.zip` file
 3. Open the folders in a code editor like Visual Studio Code
 4. Make the changes you want
-5. Using an ANSI C compiler (like gcc) and compile all the files into a `.exe` file
+5. Using an ANSI C compiler (like gcc) compile all the files into a `.exe` file
 
 ## Edit the path where the folders are created
 1. Click on [package](https://github.com/andrea-artuso/create-c-file-script/releases/tag/script) and download the latest version
